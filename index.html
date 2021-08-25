@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Buying Site</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    
+<main>
+    <section>
+       <div class="container">
+           <div class="row">
+            <div class="col-lg-6">
+                <div class="img">
+                    <img src="./images/gold.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+                <div class="col-lg-6 pt-5 pt-5">
+                    <h1 class="pt-4 mt-5">Refurbished 13.3-inch MacBook Air Apple M1 Chip with 8‑Core CPU and 8‑Core GPU - Gold
+                    </h1>
+                    <p class="">Some have been calling the new design "pretentious" and "tacky." A contributor on New York Magazine's The Cut said that the gold MacBook only attracts those who want a status symbol</p>
+                   <div class="input-part">
+
+                        <!-- memory input  -->
+                    <h6 class="pt-2">Memory</h6>
+                       <div class="d-flex">
+                        <button id="eight-memory" class="btn btn-outline-dark">8 gb Undifinite Memory</button>
+                        <button id="sixteen-memory" class="ms-2 btn btn-outline-dark">16 gb Undifinite Memory</button> 
+                        </div>  
+
+                    <!-- storage  -->
+                    <h6 class="pt-3">storage</h6>
+                    <div class="d-flex">
+                        <button id="first-storage" class="btn btn-outline-dark">256 GB SSD storage</button>
+
+                        <button id="second-storage" class="btn ms-2 btn-outline-dark">512 GB SSD  storage</button>
+
+                        <button id="third-storage" class="btn ms-2 btn-outline-dark">1 TB SSD  storage</button>
+                    </div>
+
+                    <!-- delivery option  -->
+                    <h6 class="pt-3">Choose your delivery option</h6>
+                    <div class="d-flex">
+                        <button id="free-delivery" class="btn btn-outline-dark">friday Aug 25,free delivery</button>
+                        <button id="paid-delivery" class=" ms-2 btn btn-outline-dark">friday Aug 31,$20 charge for delivery</button>                  
+                    </div>
+
+                   </div>   
+                   <!-- calculation part  -->
+
+                
+                       <div class="py-5 d-flex justify-content-between me-5 pe-5">
+                        <div>
+                            <h5>best price</h5>
+                            <h5>extra memory cost</h5>
+                            <h5>extra storage cost</h5>
+                            <h5>delivery charge</h5>
+                            <hr>
+                            <h5>Total</h5>
+                        </div>
+                        <div>
+                            <h5>$ <span id="best-price">1299</span> </h5>
+                            <h5>$ <span id="extra-memocost">0</span> </h5>
+                            <h5>$ <span id="extra-stoCost">0</span> </h5>
+                            <h5>$ <span id="delivery-cost">0</span> </h5>
+                            <hr>
+                            <h5>$ <span id="total-price">1299</span> </h5>
+                        </div>
+                       </div>
+                       <!-- coupone  -->
+                       <h6 class="fw-bold">Use Promo Code</h6>
+                       <div class="d-flex me-5 pe-5">
+                           <input id="parcentange" type="text" style="width: 50%;" class="form-control">
+                           <button onclick="checkPromoCode()" style="width: 25%;" class="btn btn-danger">Appy</button>
+                       </div>
+             
+                   
+                </div>
+           </div>
+           <hr>
+           <h1 class="text-center py-5 mb-5">Total price is $<span id="average-price">1299</span> </h1>
+       </div>
+    </section>
+</main>
+
+<!-- bootstrap js  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<!-- js  -->
+<script src="./app.js"></script>
+</body>
+</html>
